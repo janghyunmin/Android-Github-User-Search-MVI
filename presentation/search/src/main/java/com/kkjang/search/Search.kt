@@ -3,6 +3,13 @@ package com.kkjang.search
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.core.widget.doOnTextChanged
+import androidx.fragment.app.viewModels
+import com.kkjang.core.mvi.MVIFragment
+import com.kkjang.deeplink.DeepLink
+import com.kkjang.deeplink.deepLink
+import com.kkjang.search.databinding.FragmentSearchBinding
+import com.kkjang.search.ext.setTextIfNewWithSelection
+import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class Search : MVIFragment<FragmentSearchBinding, SearchIntent, SearchState, SearchEffect>(

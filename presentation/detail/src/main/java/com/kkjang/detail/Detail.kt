@@ -1,8 +1,12 @@
 package com.kkjang.detail
 
 import android.os.Bundle
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.navArgs
+import coil.load
 import dagger.hilt.android.AndroidEntryPoint
 import com.kkjang.core.mvi.MVIFragment
+import com.kkjang.detail.databinding.FragmentDetailBinding
 
 @AndroidEntryPoint
 class Detail : MVIFragment<FragmentDetailBinding, DetailIntent, DetailState, DetailEffect>(

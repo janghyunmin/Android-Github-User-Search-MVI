@@ -1,6 +1,12 @@
 package com.kkjang.search
 
+import android.view.View.inflate
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
+import coil.load
+import com.kkjang.core.base.ViewBindingListAdapter
+import com.kkjang.domain.model.BookmarkUser
+import com.kkjang.search.databinding.HolderUserBinding
 
 class UserListAdapter(
     private val onItemClickListener: (item: BookmarkUser) -> Unit,
