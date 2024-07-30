@@ -1,7 +1,12 @@
 package com.kkjang.search
 
-import coil.request.GlobalLifecycle.currentState
+import com.kkjang.core.mvi.MVIViewModel
+import com.kkjang.domain.model.LoadType
+import com.kkjang.domain.model.PagingResult
+import com.kkjang.domain.usecase.SearchUserUseCase
+import com.kkjang.domain.usecase.UpdateUserBookmarkUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import javax.inject.Inject
 
 @HiltViewModel

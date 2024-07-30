@@ -1,5 +1,10 @@
 package com.kkjang.search
 
+import com.kkjang.core.mvi.ViewEffect
+import com.kkjang.core.mvi.ViewIntent
+import com.kkjang.core.mvi.ViewState
+import com.kkjang.domain.model.BookmarkUser
+
 sealed interface SearchIntent : ViewIntent {
     @JvmInline
     value class QueryChanged(val query: String) : SearchIntent

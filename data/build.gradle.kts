@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.org.jetbrains.kotlin.kapt)
     alias(libs.plugins.dagger.hilt)
     alias(libs.plugins.serialization)
+    id ("kotlin-kapt")
 }
 
 android {
@@ -58,8 +59,10 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.org.jetbrains.kotlinx)
 
-    kapt(libs.room.compiler)
     kapt(libs.org.xerial)
+
+    kapt(libs.room.compiler)
+
 
 
     testImplementation(libs.junit)
