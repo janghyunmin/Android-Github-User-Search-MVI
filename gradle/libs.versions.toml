@@ -19,8 +19,14 @@ serialization = "1.8.0"
 safeargs = "2.5.3"
 org-jetbrains-kotlin-android = "1.8.0"
 org-jetbrains-kotlinx-coroutines-core = "1.6.4"
+org-jetbrains-kotlinx-serialization-json = "1.4.1"
 navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
+okhttp = "4.10.0"
+retrofit = "2.9.0"
+retrofit-serialization-converter = "0.8.0"
+room = "2.4.3"
+sqlite-jdbc = "3.40.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -49,7 +55,17 @@ coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
-org-jetbrains-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core",version.ref = "org-jetbrains-kotlinx-coroutines-core"}
+org-jetbrains-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "org-jetbrains-kotlinx-coroutines-core" }
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-urlconnection = { group = "com.squareup.okhttp3", name = "okhttp-urlconnection", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-serialization-converter = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofit-serialization-converter" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+org-xerial = { group = "org.xerial", name = "sqlite-jdbc", version.ref = "sqlite-jdbc" }
+org-jetbrains-kotlinx = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "org-jetbrains-kotlinx-serialization-json" }
 
 
 [plugins]
@@ -59,8 +75,8 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
-androidx-navigation-safeargs = { id = "androidx.navigation.safeargs" , version.ref = "safeargs"}
-kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "safeargs" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "org-jetbrains-kotlin-android" }
 
 

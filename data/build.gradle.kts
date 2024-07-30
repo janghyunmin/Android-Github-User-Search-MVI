@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.ksp)
+    alias(libs.plugins.org.jetbrains.kotlin.kapt)
+    alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.serialization)
 }
 
 android {
@@ -9,9 +13,12 @@ android {
 
     defaultConfig {
         minSdk = 21
+        targetSdk = 34
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+        buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
+
     }
 
     buildTypes {
@@ -33,10 +40,28 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+
+    implementation(libs.dagger.hilt)
+    kapt(libs.dagger.hilt.comiler)
+
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp.urlconnection)
+    implementation(libs.okhttp.logging)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.serialization.converter)
+    implementation(libs.room)
+    implementation(libs.room.ktx)
+    implementation(libs.org.jetbrains.kotlinx)
+
+    kapt(libs.room.compiler)
+    kapt(libs.org.xerial)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
