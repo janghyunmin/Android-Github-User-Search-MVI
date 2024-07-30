@@ -1,5 +1,9 @@
 package com.kkjang.detail
 
+import com.kkjang.core.mvi.ViewEffect
+import com.kkjang.core.mvi.ViewIntent
+import com.kkjang.core.mvi.ViewState
+
 sealed interface DetailIntent : ViewIntent {
     @JvmInline
     value class Refresh(val id: Long) : DetailIntent
