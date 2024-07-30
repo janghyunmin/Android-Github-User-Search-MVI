@@ -27,6 +27,10 @@ retrofit = "2.9.0"
 retrofit-serialization-converter = "0.8.0"
 room = "2.4.3"
 sqlite-jdbc = "3.40.0.0"
+timber = "5.0.1"
+androidx-activity-ktx = "1.9.1"
+androidx-fragment-ktx = "1.8.2"
+kotlinx-coroutines-android = "1.8.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,10 +56,9 @@ dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref 
 dagger-hilt-comiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger-hilt" }
 
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 
 org-jetbrains-kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "org-jetbrains-kotlinx-coroutines-core" }
+org-jetbrains-kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android"}
 okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 okhttp-urlconnection = { group = "com.squareup.okhttp3", name = "okhttp-urlconnection", version.ref = "okhttp" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
@@ -66,6 +69,10 @@ room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 org-xerial = { group = "org.xerial", name = "sqlite-jdbc", version.ref = "sqlite-jdbc" }
 org-jetbrains-kotlinx = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "org-jetbrains-kotlinx-serialization-json" }
+timber = { group = "com.jakewharton.timber" , name = "timber", version.ref = "timber"}
+
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidx-activity-ktx"}
+androidx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidx-fragment-ktx"}
 
 
 [plugins]

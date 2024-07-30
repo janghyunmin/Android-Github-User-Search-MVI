@@ -2,6 +2,7 @@ package com.kkjang.detail
 
 import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
+import com.kkjang.core.mvi.MVIFragment
 
 @AndroidEntryPoint
 class Detail : MVIFragment<FragmentDetailBinding, DetailIntent, DetailState, DetailEffect>(

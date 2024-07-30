@@ -1,7 +1,9 @@
 package com.kkjang.detail
 
-import coil.request.GlobalLifecycle.currentState
+import com.kkjang.domain.usecase.GetUserUseCase
+import com.kkjang.domain.usecase.UpdateUserBookmarkUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import com.kkjang.core.mvi.MVIViewModel
 import javax.inject.Inject
 
 @HiltViewModel
