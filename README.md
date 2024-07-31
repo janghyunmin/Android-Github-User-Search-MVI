@@ -3,10 +3,28 @@
 > ### MVI 패턴을 이용한 깃헙 사용자 검색 앱
   > 시연 영상
 > 
-<div style="display: flex; justify-content: space-between;">
-  <video src="https://github.com/user-attachments/assets/6d9da99b-86f5-4a2c-98ed-1cb7a975bdb2" controls style="width: 50%;"></video>
-  <video src="https://github.com/user-attachments/assets/9179608e-0393-418a-b07a-fb83d5d955f3" controls style="width: 50%;"></video>
+<div style="display: flex; justify-content: space-between; width="100%;">
+  <video src="https://github.com/user-attachments/assets/6d9da99b-86f5-4a2c-98ed-1cb7a975bdb2" style="width: 50%;"></video>
+  <video src="https://github.com/user-attachments/assets/9179608e-0393-418a-b07a-fb83d5d955f3" style="width: 50%;"></video>
 </div> 
+
+
+
+
+<!-- 회원 조회 이미지 -->
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/264061ce-f3ed-414d-b106-c377f64a92ea" style="width: 30%; height: 30%;"/>
+    <img src="https://github.com/user-attachments/assets/e3136bc5-0ce7-43d7-9038-ca7cdcaedaf7" style="width: 30%; height: 30%;"/>
+</div>
+
+<!-- 북마크 이미지 -->
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/user-attachments/assets/ffdc3d54-33a0-4f79-ba1e-48c1ec1ee6ca" style="width: 50%; height: 100%;"/> <br>
+    <img src="https://github.com/user-attachments/assets/a23c34d6-3f2e-4296-bac9-e02b36213bca" style="width: 50%; height: 100%;"/> <br>
+    <img src="https://github.com/user-attachments/assets/08274702-c2a5-4476-9249-fd69e24d2f0f" style="width: 50%; height: 100%;"/> <br>
+</div>
+
+<br>
 
 
 * Github 사용자 검색 기능
@@ -21,7 +39,7 @@
 - **Framework** : Android Studio
 - **API** : [https://api.github.com](https://api.github.com)
 
-
+<br>
 
 ## :open_file_folder: 프로젝트 구조
 
